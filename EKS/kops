@@ -25,11 +25,11 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 5. Create S3 bucket in AWS : S3 bucket is used by kubernetes to persist cluster state, lets create s3 bucket using aws cli 
 Note: Make sure you choose bucket name that is uniqe accross all aws accounts
 
-aws s3 mb s3://kops-demo.in.k8s --region ap-south-1
+aws s3 mb s3://kops-demo.k8s.in --region ap-south-1
 
 6. Create private hosted zone in AWS Route53
 
-Choose name for example (kops.in)
+Name of the hosted Zone: k8s.in
 
 7 Configure environment variables.
 Open .bashrc file
